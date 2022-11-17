@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -25,17 +26,18 @@ header {
 
 .hero-pic {
     height: 30%;
-    background-image: url("/images/hero-mobile.jpg");
+    background-image: url("images/hero-mobile.jpg");
     background-position: top;
     background-size: cover;
 
 
 }
 
+
 .main {
     text-align: center;
     height: 60%;
-
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -44,7 +46,7 @@ header {
 
 .title {
     font-size: 56px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     color: hsl(0, 6%, 24%);
 }
@@ -84,52 +86,118 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        height: 100vh;
-        width: 100vw;
-        display: grid;
-        grid-column: 10;
-        grid-template-columns: 10vw;
-        grid-row: 4;
-    } 
 
-
-header{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row: 1;
-}
+body{
+    display: flex;
+    flex-direction: column; 
     
+}   
 
-.hero-pic {
-    height: 100%;
-    background-image: url(/images/hero-desktop.jpg);
-    background-size: initial;
-    background-repeat: no-repeat;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 5;
-    grid-column-end: 10;
- 
-}  
-
-.main {
-    width: 50%;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.logo{
+    padding-left: 100px;
+    width: 40%;
 }
+
+.hero-pic{
+    display: none;
+}
+
+.main{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    flex: 50%;
+    justify-content: space-evenly;
+    padding-left: 100px;
+}
+
+
+.hero-desk{
+    background-image: url("images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 50%;
    
-.input-group {
+   
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     /* WITH GRID */
+
+
+    /* body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    }
+
+.logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 60%;
+    padding: 1.5em;
+    padding-left: 100px;
+    
+}
+
+.hero-pic{
+    display: none;
+}
+
+.hero-desk{
     grid-column-start: 3;
     grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-image: url("images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.main{
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 5;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 0 100px 150px;
+    
 }
-   
 
-
-
-
+.title{
+    justify-content: space-between;
 }
+
+p{
+    display: inline;
+} */
+
+
+
+
+
+
+
+
