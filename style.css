@@ -28,7 +28,7 @@ header {
     height: 30%;
     background-image: url("images/hero-mobile.jpg");
     background-position: top;
-    background-size: cover;
+     background-size: cover;
 
 
 }
@@ -41,7 +41,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 20px 0;
+    
 }
 
 .title {
@@ -51,11 +51,19 @@ header {
     color: hsl(0, 6%, 24%);
 }
 
-.title span {
-    color: hsl(0, 36%, 70%);
-
-
+h1{
+    align-content: space-between;
 }
+.spanA{
+    color: hsl(0, 36%, 70%);;
+}
+
+.spanB{
+    color: black;
+    font-weight: bold;
+    
+}
+
 p{
     
     color: hsl(0, 36%, 70%);
@@ -67,7 +75,8 @@ input , button {
 }
 
 input {
-    width: 80%;
+    height: 60px;
+    width: 60%;
     border-radius: 2em;
     border: 1px solid hsl(0, 36%, 70%);
     padding: 0 10px;
@@ -78,16 +87,20 @@ input {
 }
 
 button {
-    margin-left: -4em;
-    width: 20%;
+    
+    margin-left: -4em; 
+    height: 60px; 
+    width: 10%;
     border-radius: 2em;
     background-color: hsl(0, 36%, 70%);
     color: white;
+    font-weight: bold;
+  
 }
 
 @media screen and (min-width: 768px) {
 
-body{
+ body{
     display: flex;
     flex-direction: column; 
     
@@ -95,30 +108,56 @@ body{
 
 .logo{
     padding-left: 100px;
-    width: 40%;
+    width: 20%;
+   
 }
 
 .hero-pic{
-    display: none;
-}
-
-.main{
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    flex: 50%;
-    justify-content: space-evenly;
-    padding-left: 100px;
-}
-
-
-.hero-desk{
     background-image: url("images/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     flex: 50%;
-   
-   
+    height: 100vh;
+    width: 50vw;
+    position: absolute;   
+    right: 0; 
+}
 
+.main{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    flex: 50%;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    width: 50vw;
+    height: 100vh;
+   
+}
+
+h1{
+    width: 100px;
+    height: 50px;
+   
+}
+
+.spanA{
+    color: hsl(0, 36%, 70%);;
+}
+
+.spanB{
+    color: black;
+    font-weight: bold;
+    
+}
+
+p{
+    width: 500px;
+    height: 20px;
+}
+
+.input-group{
+    height: 20px;
+    width: 800px;
 }
 
 
@@ -139,7 +178,7 @@ body{
                      /* WITH GRID */
 
 
-    /* body{
+     /* body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -192,7 +231,7 @@ body{
 
 p{
     display: inline;
-} */
+}  */
 
 
 
